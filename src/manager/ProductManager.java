@@ -2,9 +2,7 @@ package manager;
 
 import model.Product;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ProductManager {
     public static List<Product> arr = new ArrayList<>();
@@ -114,5 +112,14 @@ public class ProductManager {
             }
         }
         System.out.println(arr.get(stt));
+    }
+
+//    sắp xếp theo giá
+    public void sortProduct (List<Product> arr){
+//        Collections.sort(arr, Comparator.comparing());
+    arr.sort(Comparator.comparingInt(Product::getPrice));
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.println(arr.get(i));
+        }
     }
 }

@@ -65,6 +65,8 @@ public class main {
                         object.deleteProduct(arr, id1);
                         return;
                     case 5:
+                        object.sortProduct(arr);
+                        break;
                     case 6:
                         System.out.println("Thông tin sp đắt nhất là:");
                         object.searchProduct(arr);
