@@ -70,9 +70,12 @@ public class main {
                         object.searchProduct(arr);
                         return;
                     case 7:
+                        System.out.println("Xuất file");
+                        obj.inPut();
                     case 8:
-                        System.out.println("Ghi file");
-                        obj.outPut(arr);
+                        System.out.println("Nhập tên sp muốn lưu:");
+                        String name2 = scanner1.nextLine();
+                        obj.outPut(arr, name2);
                     case 9:
                         System.out.println("Thoát");
                         return;
