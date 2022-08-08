@@ -81,6 +81,8 @@ public class main {
                     case 9:
                         System.out.println("Thoát");
                         return;
+                    default:
+                        System.out.println("Nhập đúng đi bạn hiền ơi");
                 }
             } catch (Exception e) {
                 System.out.println("Đề nghị bạn nhập đúng theo mẫu.");
